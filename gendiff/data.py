@@ -15,7 +15,7 @@ def get_dict_from_file(path_file):
 def open_file(s, file_ext):
     if file_ext.lower() == '.json':
         return json.loads(s)
-    elif file_ext.lower() == '.yaml' or file_ext.lower() == '.yaml':
+    elif file_ext.lower() == '.yml' or file_ext.lower() == '.yaml':
         return yaml.safe_load(s)
     else:
         raise ValueError('This file type is not supported')
